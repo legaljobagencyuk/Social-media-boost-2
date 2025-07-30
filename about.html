@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Social Media Boost</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .slideshow-container {
+            position: relative;
+            max-width: 100%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body style="font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4;">
+
+    <header style="background-color: #4CAF50; color: white; padding: 20px; text-align: center;">
+        <h1>About Us</h1>
+        <p>Learn more about our mission and values.</p>
+    </header>
+
+    <nav style="background-color: #333; color: white; padding: 10px; text-align: center;">
+        <a href="index.html" style="color: white; margin: 15px; text-decoration: none;">Home</a>
+        <a href="about.html" style="color: white; margin: 15px; text-decoration: none;">About Us</a>
+        <a href="service.html" style="color: white; margin: 15px; text-decoration: none;">Services</a>
+        <a href="pricing.html" style="color: white; margin: 15px; text-decoration: none;">Pricing</a>
+    </nav>
+
+    <main style="padding: 20px;">
+        <section style="background-color: white; padding: 20px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+            <h2 style="color: #4CAF50;">Our Mission</h2>
+            <p>At Social Media Boost, our mission is to empower individuals and businesses to enhance their online presence through reliable and effective social media solutions. We believe in the power of social media to connect people and create opportunities.</p>
+        </section>
+               <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="engagement.webp" alt="Engagement">
+        </div>
+        <div class="mySlides fade">
+            <img src="1m.webp" alt="1 Million">
+        </div>
+        <div class="mySlides fade">
+            <img src="100k.webp" alt="100 Thousand">
+        </div>
+    </div>
+            <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("mySlides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex - 1].style.display = "block";  
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+    </script>
+
+        <section style="margin-top: 20px;">
+            <h2 style="color: #4CAF50;">Our Values</h2>
+            <ul>
+                <li><strong>Integrity:</strong> We operate with honesty and transparency in all our dealings.</li>
+                <li><strong>Customer Focus:</strong> Our customers are at the heart of everything we do.</li>
+                <li><strong>Innovation:</strong> We continuously seek new ways to improve our services and offerings.</li>
+                <li><strong>Quality:</strong> We are committed to providing high-quality services that deliver results.</li>
+            </ul>
+        </section>
+
+        <section style="margin-top: 20px;">
+            <h2 style="color: #4CAF50;">Our Team</h2>
+            <p>Our team consists of experienced professionals who are passionate about social media and dedicated to helping our clients succeed. We work collaboratively to ensure that we meet and exceed our clients' expectations.</p>
+        </section>
+    </main>
+
+    <footer style="background-color: #333; color: white; text-align: center; padding: 10px; position: relative; bottom: 0; width: 100%;">
+        <p>&copy; 2025 Social Media Boost. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
